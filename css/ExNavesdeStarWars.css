@@ -1,0 +1,175 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: orange;
+    font-size: 20px;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    width: 100%;
+    min-height: 60px;
+    background-color: #292929;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 8px 15px;
+}
+.logoheader{
+    height: 50px;
+    background-color: #292929;
+}
+.botoesheader{
+    display: flex;
+    gap: 15px;
+    background-color: #292929;
+}
+.botao{
+    color: orange;
+    font-size: 16px;
+    padding: 6px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.botao:hover{
+    border-bottom: 2px solid orange;
+    border-top: 2px solid orange;
+}
+.sectiontitle{
+    font-size: 26px;
+    text-align: center;
+    padding-top: 20px;
+}
+.sectiondescription{
+    text-align: center;
+    color: #383838;
+}
+.gridcontainer{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "maincontent sidebarcontent";
+    padding: 20px;
+    flex: 1 0 auto;
+}
+.naves{
+    width:100%;
+    height: 180px;
+    border-radius: 10px;
+}
+.maincontent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    grid-area: maincontent;
+}
+.card{
+    width: 300px;
+    height: 380px;
+    border: 4px solid transparent;
+    border-radius: 20px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+.card:hover{
+    border-color: black;
+    zoom: 120%;
+    z-index: 1;
+}
+.deathstar{
+    border-radius: 10% ;
+}
+.titlecard{
+    font-size: 26px;
+    text-align: center;
+    padding: 6px;
+}
+.infocard{
+    text-align: justify;
+    padding: 6px;
+    font-size: 10px;
+}
+.sidebarcontent{
+    background-color: #383838;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    min-width: 300px;
+    grid-area: sidebarcontent;
+}
+.menulateral, .sidecardtitle{
+    background-color: #383838;
+    color: orange;
+    text-align: center;
+}
+.sidebartitle{
+    color: orange;
+    font-size: 26px;
+    text-align: center;
+    padding: 15px;
+    background-color: #383838;
+}
+.sidecard{
+    background-color: #383838;
+    color: orange;
+    text-align: center;
+    width: 100%;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    gap: 10px;
+}
+.sidecard:hover{
+    border-color: orange;
+}
+.imglaterais{
+    width:100%;
+    border-radius: 10px;
+}
+.footer{
+    width:100%;
+    min-width: 40px;
+    background-color: #292929;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px;
+    gap: 15px;
+}
+.footeranchor{
+    text-decoration: none;
+    color: orange;
+    background-color: #292929;
+}
+.logofooter{
+    height: 60px;
+    background-color: #292929;
+}
+@media(max-width: 640px){
+    .gridcontainer{
+        grid-template-areas: "maincontent"
+                            "sidebarcontent";
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    }
+    .sidebarcontent{
+        min-width: auto;
+    }
+
+}
+
+
